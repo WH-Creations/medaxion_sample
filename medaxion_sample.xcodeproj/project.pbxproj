@@ -13,9 +13,6 @@
 		67D4ECE72AFDFEB80077E588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D4ECE52AFDFEB80077E588 /* Main.storyboard */; };
 		67D4ECE92AFDFEB90077E588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D4ECE82AFDFEB90077E588 /* Assets.xcassets */; };
 		67D4ECEC2AFDFEB90077E588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D4ECEA2AFDFEB90077E588 /* LaunchScreen.storyboard */; };
-		67D4ECF72AFDFEB90077E588 /* medaxion_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECF62AFDFEB90077E588 /* medaxion_sampleTests.swift */; };
-		67D4ED012AFDFEB90077E588 /* medaxion_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ED002AFDFEB90077E588 /* medaxion_sampleUITests.swift */; };
-		67D4ED032AFDFEB90077E588 /* medaxion_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ED022AFDFEB90077E588 /* medaxion_sampleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		67D4ECEB2AFDFEB90077E588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D4ECED2AFDFEB90077E588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D4ECF22AFDFEB90077E588 /* medaxion_sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medaxion_sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67D4ECF62AFDFEB90077E588 /* medaxion_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medaxion_sampleTests.swift; sourceTree = "<group>"; };
 		67D4ECFC2AFDFEB90077E588 /* medaxion_sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medaxion_sampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67D4ED002AFDFEB90077E588 /* medaxion_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medaxion_sampleUITests.swift; sourceTree = "<group>"; };
-		67D4ED022AFDFEB90077E588 /* medaxion_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medaxion_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +93,14 @@
 		67D4ECDE2AFDFEB80077E588 /* medaxion_sample */ = {
 			isa = PBXGroup;
 			children = (
-				67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */,
-				67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */,
+				67D4ED102AFDFFC90077E588 /* Assets */,
+				67D4ED0F2AFDFFC20077E588 /* Common */,
+				67D4ED112AFDFFE40077E588 /* Services */,
+				67D4ED142AFDFFF90077E588 /* Models */,
+				67D4ED122AFDFFEC0077E588 /* Views */,
+				67D4ED132AFDFFF20077E588 /* ViewModels */,
 				67D4ECE32AFDFEB80077E588 /* ViewController.swift */,
 				67D4ECE52AFDFEB80077E588 /* Main.storyboard */,
-				67D4ECE82AFDFEB90077E588 /* Assets.xcassets */,
 				67D4ECEA2AFDFEB90077E588 /* LaunchScreen.storyboard */,
 				67D4ECED2AFDFEB90077E588 /* Info.plist */,
 			);
@@ -113,7 +110,9 @@
 		67D4ECF52AFDFEB90077E588 /* medaxion_sampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				67D4ECF62AFDFEB90077E588 /* medaxion_sampleTests.swift */,
+				67D4ED152AFE00530077E588 /* Services */,
+				67D4ED162AFE00590077E588 /* Views */,
+				67D4ED172AFE006C0077E588 /* ViewModels */,
 			);
 			path = medaxion_sampleTests;
 			sourceTree = "<group>";
@@ -121,10 +120,74 @@
 		67D4ECFF2AFDFEB90077E588 /* medaxion_sampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				67D4ED002AFDFEB90077E588 /* medaxion_sampleUITests.swift */,
-				67D4ED022AFDFEB90077E588 /* medaxion_sampleUITestsLaunchTests.swift */,
 			);
 			path = medaxion_sampleUITests;
+			sourceTree = "<group>";
+		};
+		67D4ED0F2AFDFFC20077E588 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */,
+				67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67D4ED102AFDFFC90077E588 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				67D4ECE82AFDFEB90077E588 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		67D4ED112AFDFFE40077E588 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67D4ED122AFDFFEC0077E588 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67D4ED132AFDFFF20077E588 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67D4ED142AFDFFF90077E588 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67D4ED152AFE00530077E588 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67D4ED162AFE00590077E588 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67D4ED172AFE006C0077E588 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D4ECF72AFDFEB90077E588 /* medaxion_sampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D4ED012AFDFEB90077E588 /* medaxion_sampleUITests.swift in Sources */,
-				67D4ED032AFDFEB90077E588 /* medaxion_sampleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

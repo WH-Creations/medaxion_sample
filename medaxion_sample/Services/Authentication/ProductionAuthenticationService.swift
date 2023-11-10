@@ -9,6 +9,7 @@ import Foundation
 
 class ProductionAuthenticationService: AuthenticationServiceProtocol {
     
+    // MARK: - Functions
     func login(username: String, password: String, completion: @escaping (Bool) -> Void) {
         // Implementation of login using username and password
         // This could involve making a network request and validating the response

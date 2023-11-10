@@ -189,11 +189,6 @@ class LoginViewController: UIViewController {
 
             // Create a new navigation controller with the HomeViewController at its root
             let navigationController = UINavigationController(rootViewController: homeVC)
-
-            // Animate the transition to the new root view controller
-            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
-                window.rootViewController = navigationController
-            }, completion: nil)
             
             // Animate the transition by cross-dissolving to the new root view controller.
             UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {

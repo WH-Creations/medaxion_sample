@@ -99,7 +99,6 @@ class HomeViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
         //TODO: Navigate to character details
     }
     
@@ -111,8 +110,8 @@ class HomeViewController: UICollectionViewController {
                     case .success(_):
                         self?.collectionView.reloadData()
                     case .failure(let error):
-                        // Handle the error, e.g., show an alert
-                        print(error.localizedDescription) // Placeholder for proper error handling
+                        // Handle the error, e.g., show an error placeholder or something similar
+                        print(error.localizedDescription)
                     }
                 }
             })

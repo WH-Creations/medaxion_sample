@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67CA7F3F2AFE06160057241D /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F3E2AFE06160057241D /* LoginUITests.swift */; };
 		67D4ECE02AFDFEB80077E588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */; };
 		67D4ECE22AFDFEB80077E588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */; };
 		67D4ECE42AFDFEB80077E588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECE32AFDFEB80077E588 /* ViewController.swift */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67CA7F3D2AFE06160057241D /* medaxion_sampleUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		67CA7F3E2AFE06160057241D /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
+		67CA7F402AFE063D0057241D /* medaxion_sampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		67D4ECDC2AFDFEB80077E588 /* medaxion_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medaxion_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				67D4ED152AFE00530077E588 /* Services */,
 				67D4ED162AFE00590077E588 /* Views */,
 				67D4ED172AFE006C0077E588 /* ViewModels */,
+				67CA7F402AFE063D0057241D /* medaxion_sampleTests-Bridging-Header.h */,
 			);
 			path = medaxion_sampleTests;
 			sourceTree = "<group>";
@@ -128,6 +133,8 @@
 		67D4ECFF2AFDFEB90077E588 /* medaxion_sampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				67CA7F3E2AFE06160057241D /* LoginUITests.swift */,
+				67CA7F3D2AFE06160057241D /* medaxion_sampleUITests-Bridging-Header.h */,
 			);
 			path = medaxion_sampleUITests;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 					};
 					67D4ECFB2AFDFEB90077E588 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = 67D4ECDB2AFDFEB80077E588;
 					};
 				};
@@ -363,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CA7F3F2AFE06160057241D /* LoginUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QA27SLSJ5W;
@@ -631,6 +641,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whcreations.medaxion-sampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "medaxion_sampleUITests/medaxion_sampleUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = medaxion_sample;
@@ -641,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QA27SLSJ5W;
@@ -649,6 +662,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.whcreations.medaxion-sampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "medaxion_sampleUITests/medaxion_sampleUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = medaxion_sample;

@@ -7,6 +7,8 @@
 
 import Foundation
 
+//TODO: Implement MockLoginViewModel for testing the LoginViewController
+
 class MockLoginViewModel: LoginViewModelProtocol {
     
     // MARK: - Properties

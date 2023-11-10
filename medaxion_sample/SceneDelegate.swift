@@ -18,21 +18,58 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Guard to ensure the scene is of type UIWindowScene
         guard let windowScene = (scene as? UIWindowScene) else { return }
-
-        // Create the LoginViewModel
-        let viewModel = LoginViewModel(authService: AuthenticationService())
-        
-        // Create the LoginViewController with the viewModel
-        let loginViewController = LoginViewController(viewModel: viewModel)
         
         // Create a UIWindow using the windowScene constructor which takes in a window scene.
         let window = UIWindow(windowScene: windowScene)
         
-        // Set the LoginViewController as the root view controller
-        window.rootViewController = loginViewController
-        
-        // Set the window and make it key and visible
-        self.window = window
+        // Check if the app is launched for the specific UI test
+        if CommandLine.arguments.contains("--UITesting-HomeViewController") {
+            // Configure with MockHomeViewModel and show HomeViewController
+            let mockViewModel = MockHomeViewModel(characters: [
+                MarvelCharacter(
+                    id: 1,
+                    name: "Iron Man",
+                    description: "A wealthy industrialist and genius inventor",
+                    resourceURI: nil,
+                    thumbnail: MarvelCharacterThumbnail(path: "path/to/ironman", ext: "jpg"),
+                    comics: nil,
+                    stories: nil,
+                    events: nil,
+                    series: nil
+                ),
+                MarvelCharacter(
+                    id: 2,
+                    name: "Hulk",
+                    description: "A green behemoth",
+                    resourceURI: nil,
+                    thumbnail: MarvelCharacterThumbnail(path: "path/to/hulk", ext: "jpg"),
+                    comics: nil,
+                    stories: nil,
+                    events: nil,
+                    series: nil
+                )
+            ])
+            let homeViewController = HomeViewController(viewModel: mockViewModel, layout: UICollectionViewFlowLayout())
+            
+            // Set the LoginViewController as the root view controller
+            window.rootViewController = UINavigationController(rootViewController: homeViewController)
+            
+            // Set the window and make it key and visible
+            self.window = window
+        } else {
+            
+            // Create the LoginViewModel
+            let viewModel = LoginViewModel(authService: AuthenticationService())
+            
+            // Create the LoginViewController with the viewModel
+            let loginViewController = LoginViewController(viewModel: viewModel)
+            
+            // Set the LoginViewController as the root view controller
+            window.rootViewController = loginViewController
+            
+            // Set the window and make it key and visible
+            self.window = window
+        }
         window.makeKeyAndVisible()
     }
 

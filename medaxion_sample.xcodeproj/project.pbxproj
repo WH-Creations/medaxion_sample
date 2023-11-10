@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		676936AC2AFE8DE3003532AC /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676936AB2AFE8DE3003532AC /* Config.plist */; };
 		676936AE2AFE8E40003532AC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676936AD2AFE8E40003532AC /* Config.swift */; };
-		67CA7F3F2AFE06160057241D /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F3E2AFE06160057241D /* LoginUITests.swift */; };
+		676936B02AFEA6E2003532AC /* HomeViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676936AF2AFEA6E2003532AC /* HomeViewControllerUITests.swift */; };
 		67CA7F432AFE0CB70057241D /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F422AFE0CB70057241D /* LoginViewModelProtocol.swift */; };
 		67CA7F452AFE0CC30057241D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F442AFE0CC30057241D /* LoginViewModel.swift */; };
 		67CA7F472AFE0CC80057241D /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F462AFE0CC80057241D /* MockLoginViewModel.swift */; };
@@ -64,8 +64,8 @@
 /* Begin PBXFileReference section */
 		676936AB2AFE8DE3003532AC /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		676936AD2AFE8E40003532AC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		676936AF2AFEA6E2003532AC /* HomeViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerUITests.swift; sourceTree = "<group>"; };
 		67CA7F3D2AFE06160057241D /* medaxion_sampleUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleUITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		67CA7F3E2AFE06160057241D /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		67CA7F402AFE063D0057241D /* medaxion_sampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		67CA7F422AFE0CB70057241D /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
 		67CA7F442AFE0CC30057241D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		676936B12AFEBB94003532AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				676936AF2AFEA6E2003532AC /* HomeViewControllerUITests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		67CA7F412AFE0CA90057241D /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +264,7 @@
 		67D4ECFF2AFDFEB90077E588 /* medaxion_sampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				67CA7F3E2AFE06160057241D /* LoginUITests.swift */,
+				676936B12AFEBB94003532AC /* Home */,
 				67CA7F3D2AFE06160057241D /* medaxion_sampleUITests-Bridging-Header.h */,
 			);
 			path = medaxion_sampleUITests;
@@ -520,7 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CA7F3F2AFE06160057241D /* LoginUITests.swift in Sources */,
+				676936B02AFEA6E2003532AC /* HomeViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,9 +34,11 @@ class HomeViewModel: HomeViewModelProtocol {
             switch result {
             case .success(let characters):
                 if offset == 0 {
-                    self?.characterList = characters // Reset the list if it's a fresh load
+                    // Reset the list if it's a fresh load
+                    self?.characterList = characters
                 } else {
-                    self?.characterList.append(contentsOf: characters) // Append to the list if it's pagination
+                    // Append to the list if it's pagination
+                    self?.characterList.append(contentsOf: characters)
                 }
                 completion(.success(self?.characterList ?? []))
             case .failure(let error):
@@ -51,7 +53,8 @@ class HomeViewModel: HomeViewModelProtocol {
         loadCharacterList(offset: 0) { result in
             switch result {
             case .success(let characters):
-                self.characterList = characters // Reset the list with the new characters
+                // Reset the list with the new characters
+                self.characterList = characters
                 completion(.success(characters))
             case .failure(let error):
                 completion(.failure(error))

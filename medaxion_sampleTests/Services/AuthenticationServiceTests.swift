@@ -75,4 +75,6 @@ class AuthenticationServiceTests: XCTestCase {
         // Wait for the expectation to be fulfilled within a timeout.
         wait(for: [expectation], timeout: 2.0)
     }
+    
+    // Additional test cases...
 }

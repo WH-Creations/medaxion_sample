@@ -31,5 +31,5 @@ class StringExtensionTests: XCTestCase {
         XCTAssertEqual(hashed, "172ef468aeebe0534168c90fb8034782", "MD5 hash of special characters should match known value")
     }
 
-    // Add more test cases as needed...
+    // Additional test cases...
 }

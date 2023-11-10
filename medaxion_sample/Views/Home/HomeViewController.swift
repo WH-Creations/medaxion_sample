@@ -13,16 +13,17 @@ class HomeViewController: UICollectionViewController {
     
     //MARK: - Properties
     let refreshControl = UIRefreshControl()
-    private var viewModel: HomeViewModelProtocol!
+    private var viewModel: HomeViewModelProtocol
     private let sectionInsets = UIEdgeInsets(top: 14.0, left: 14.0, bottom: 14.0, right: 14.0)
     private var itemsPerRow: CGFloat = 2
     private let reuseIdentifier = "homeCollectionViewCell"
     
     //MARK: - Lifecycle
     // Initialize HomeViewController with a MarvelApiServiceProtocol
-    init(marvelApiService: MarvelApiServiceProtocol, layout: UICollectionViewLayout) {
+    init(viewModel: HomeViewModelProtocol, layout: UICollectionViewLayout) {
+        self.viewModel = viewModel
+
         super.init(collectionViewLayout: layout)
-        self.viewModel = HomeViewModel(marvelApiService: marvelApiService)
     }
     
     required init?(coder: NSCoder) {
@@ -39,12 +40,16 @@ class HomeViewController: UICollectionViewController {
     
     //MARK: - Setup
     func setupView() {
+        self.view.accessibilityIdentifier = "HomeViewIdentifier"
+
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.largeTitleDisplayMode = .always
+        
         self.title = "Marvel Characters"
     }
     
     func setupCollectionView() {
+        self.collectionView.accessibilityIdentifier = "HomeCollectionViewIdentifier"
         self.collectionView.register(UINib(nibName:"HomeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
     }
     
@@ -52,6 +57,7 @@ class HomeViewController: UICollectionViewController {
         refreshControl.tintColor = .lightGray
         refreshControl.addTarget(self, action: #selector(refreshCharacterListAction), for: .valueChanged)
         self.collectionView.refreshControl = refreshControl
+        refreshControl.accessibilityIdentifier = "HomeCollectionViewRefreshControl"
     }
     
     @objc private func refreshCharacterListAction() {

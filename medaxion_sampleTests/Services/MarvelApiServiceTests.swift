@@ -69,5 +69,5 @@ final class MarvelApiServiceTests: XCTestCase {
         waitForExpectations(timeout: 1, handler: nil)
     }
 
-    // Add more test cases as needed...
+    // Additional test cases...
 }

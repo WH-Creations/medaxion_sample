@@ -180,12 +180,14 @@ class LoginViewController: UIViewController {
             
             // Instantiate your API service
             let marvelApiService = MarvelApiService() // Assuming MarvelApiService conforms to MarvelApiServiceProtocol
+            
+            let viewModel = HomeViewModel(marvelApiService: marvelApiService)
 
             // Create a UICollectionViewLayout instance
             let layout = UICollectionViewFlowLayout() // Customize this layout as needed
 
             // Create an instance of HomeViewController with the required dependencies
-            let homeVC = HomeViewController(marvelApiService: marvelApiService, layout: layout)
+            let homeVC = HomeViewController(viewModel: viewModel, layout: layout)
 
             // Create a new navigation controller with the HomeViewController at its root
             let navigationController = UINavigationController(rootViewController: homeVC)

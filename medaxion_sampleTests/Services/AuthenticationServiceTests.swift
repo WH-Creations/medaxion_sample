@@ -5,6 +5,7 @@
 //  Created by Casey West on 11/9/23.
 
 import XCTest
+@testable import medaxion_sample
 
 class AuthenticationServiceTests: XCTestCase {
     

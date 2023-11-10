@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		67CA7F3F2AFE06160057241D /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F3E2AFE06160057241D /* LoginUITests.swift */; };
+		67CA7F432AFE0CB70057241D /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F422AFE0CB70057241D /* LoginViewModelProtocol.swift */; };
+		67CA7F452AFE0CC30057241D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F442AFE0CC30057241D /* LoginViewModel.swift */; };
+		67CA7F472AFE0CC80057241D /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CA7F462AFE0CC80057241D /* MockLoginViewModel.swift */; };
 		67D4ECE02AFDFEB80077E588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */; };
 		67D4ECE22AFDFEB80077E588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */; };
 		67D4ECE42AFDFEB80077E588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4ECE32AFDFEB80077E588 /* ViewController.swift */; };
@@ -41,6 +44,9 @@
 		67CA7F3D2AFE06160057241D /* medaxion_sampleUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		67CA7F3E2AFE06160057241D /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		67CA7F402AFE063D0057241D /* medaxion_sampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "medaxion_sampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		67CA7F422AFE0CB70057241D /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
+		67CA7F442AFE0CC30057241D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		67CA7F462AFE0CC80057241D /* MockLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
 		67D4ECDC2AFDFEB80077E588 /* medaxion_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medaxion_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D4ECDF2AFDFEB80077E588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D4ECE12AFDFEB80077E588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67CA7F412AFE0CA90057241D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				67CA7F422AFE0CB70057241D /* LoginViewModelProtocol.swift */,
+				67CA7F442AFE0CC30057241D /* LoginViewModel.swift */,
+				67CA7F462AFE0CC80057241D /* MockLoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		67D4ECD32AFDFEB80077E588 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +190,7 @@
 		67D4ED132AFDFFF20077E588 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				67CA7F412AFE0CA90057241D /* Login */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -353,6 +370,9 @@
 				67D4ECE42AFDFEB80077E588 /* ViewController.swift in Sources */,
 				67D4ED1C2AFE02550077E588 /* AuthenticationServiceProtocol.swift in Sources */,
 				67D4ED1E2AFE02640077E588 /* ProductionAuthenticationService.swift in Sources */,
+				67CA7F432AFE0CB70057241D /* LoginViewModelProtocol.swift in Sources */,
+				67CA7F452AFE0CC30057241D /* LoginViewModel.swift in Sources */,
+				67CA7F472AFE0CC80057241D /* MockLoginViewModel.swift in Sources */,
 				67D4ECE02AFDFEB80077E588 /* AppDelegate.swift in Sources */,
 				67D4ECE22AFDFEB80077E588 /* SceneDelegate.swift in Sources */,
 				67D4ED202AFE026E0077E588 /* MockAuthenticationService.swift in Sources */,
